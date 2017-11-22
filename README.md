@@ -11,7 +11,7 @@ Luis Muñoz this my final test for complete the react native class
 
  # Run the application
  
-5-  cd flascardapp
+5  cd flascardapp
 6- yarn start or npm start
  
  # Dependencies
