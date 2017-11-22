@@ -126,14 +126,14 @@ class QuizScreen extends Component {
               <TouchableOpacity style={{flex: 1}} onPress={e => this.goNextQuestion(true)}>
                 <View style={[styles.button2, {backgroundColor: verde}]}>
                   <Text style={styles.buttonText2}>
-                    Correct
+                    True
                   </Text>
                 </View>
               </TouchableOpacity>
               <TouchableOpacity style={{flex: 1}} onPress={e => this.goNextQuestion(false)}>
                 <View style={[styles.button, {backgroundColor: rojo}]}>
                   <Text style={styles.buttonText2}>
-                    Incorrect
+                    False
                   </Text>
                 </View>
               </TouchableOpacity>
