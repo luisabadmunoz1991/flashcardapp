@@ -4,7 +4,7 @@ Luis Muñoz this my final test for complete the react native class
 
  # How to run the app flascardapp
 
- 1- git clone flascardapp
+ 1- git clone flascardapp https://github.com/luisabadmunoz1991/flashcardapp
  2- cd flascardapp
  3- yarn
  4- yarn start
