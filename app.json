@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "MyFlashCards",
+    "slug": "myflashcards",
+    "sdkVersion": "20.0.0",
+    "privacy": "public",
+    "version": "0.0.1",
+    "sdkVersion": "21.0.0",
+    "orientation": "portrait",
+    "ios": {
+      "bundleIdentifier": "com.myflashcards"
+    },
+    "android": {
+      "package": "com.myflashcards"
+    },
+    "androidStatusBarColor": "#334393",
+  	"androidStatusBar": {
+    	"barStyle": "light-content",
+    	"backgroundColor": "#334393"
+  	}
+  }
+}
