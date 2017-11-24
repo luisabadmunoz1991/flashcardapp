@@ -13,14 +13,12 @@ export default StyleSheet.create({
 
    sintilla:{
     color: white,
-    fontSize:22
    },
 
 
   header: {
     justifyContent: 'center',
     backgroundColor:azul,
-    fontSize:29
     
   },
   loading: {
@@ -34,18 +32,15 @@ export default StyleSheet.create({
     backgroundColor: 'white'
   },
   title: {
-    fontSize:29,
     paddingBottom: 20,
     color: blue
   },
 
    titledetalles: {
-    fontSize:29,
     paddingBottom: 20,
     color: white
   },
   counts2: {
-    fontSize:18,
     color:rosita
   },
   detailWrapper: {
@@ -70,18 +65,15 @@ export default StyleSheet.create({
   },
 
     buttonText2: {
-    fontSize: 26,
     alignSelf: 'center',
     color: white
   },
   buttonText: {
-    fontSize: 26,
     alignSelf: 'center',
     color: black
   },
 
   scoreText: {
-    fontSize: 22
   },
   progressText: {
     fontSize: 28,
@@ -99,7 +91,6 @@ export default StyleSheet.create({
  
 
   textInput: {
-    fontSize: 22,
     height: 50,
     borderRadius: 8,
     margin: 15,
