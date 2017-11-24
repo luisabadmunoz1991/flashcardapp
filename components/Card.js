@@ -33,13 +33,13 @@ class Card extends Component {
             <Text style={styles.sintilla}>
               {data.question + '?'}
             </Text>
-            <Text style={{fontSize: Math.floor(width / 18), color: 'orange', marginBottom: 5}}>Show Answer</Text>
+            <Text style={{color: 'orange', marginBottom: 5}}>Show Answer</Text>
           </View>
           <View style={[styles.quizCard, styles.cardBack]}>
             <Text style={styles.sintilla}>
               {data.answer}
             </Text>
-            <Text style={{fontSize: Math.floor(width / 18), color: 'green', marginBottom: 5}}>Question</Text>
+            <Text style={{color: 'green', marginBottom: 5}}>Question</Text>
           </View>
         </FlipCard>
       </View>
