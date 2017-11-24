@@ -9,7 +9,7 @@ const CARD_STORAGE_KEY = 'MobileFlashCards:card'
 
 class DeckListScreen extends Component {
 
-  state: {
+  state = {
     list: null
   }
 

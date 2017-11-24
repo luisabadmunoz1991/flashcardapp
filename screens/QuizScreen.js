@@ -145,3 +145,4 @@ class QuizScreen extends Component {
 }
 
 export default QuizScreen
+
