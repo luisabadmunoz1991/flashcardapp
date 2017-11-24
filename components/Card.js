@@ -13,13 +13,6 @@ class Card extends Component {
     showAnswer: false
   }
 
-  constructor(props){
-    super(props);
-    this.state = {
-      showAnswer: false
-    }
-  }
-
   componentWillReceiveProps () {
     this.setState({showAnswer: false})
   }
