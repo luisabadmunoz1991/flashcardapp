@@ -68,7 +68,7 @@ class DeckDetailScreen extends Component {
 
     return (
       <View style={styles.container}>
-        <View style={{flex: 4, alignItems: 'center', justifyContent: 'center'}}>
+        <View style={styles.display}>
           <Text style={styles.titledetalles}>
               {deckData.title}
             </Text>
@@ -77,7 +77,7 @@ class DeckDetailScreen extends Component {
             </Text>
         </View>
         <TouchableOpacity style={{flex: 1}} onPress={this.goAddCard}>
-          <View style={[styles.button, {backgroundColor: white}]}>
+          <View style={styles.button}>
             <Text style={styles.buttonText}>
               Make a new question
             </Text>
@@ -86,7 +86,7 @@ class DeckDetailScreen extends Component {
         {
           _questions.length > 0 &&
           <TouchableOpacity style={{flex: 1}} onPress={this.goQuiz}>
-            <View style={[styles.button, {backgroundColor: white}]}>
+            <View style={styles.button}>
               <Text style={styles.buttonText}>
                 Start Test
               </Text>

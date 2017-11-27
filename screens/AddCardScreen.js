@@ -40,7 +40,7 @@ class AddCardScreen extends Component {
       )
       return
     }
-    // prepare data to submit
+  
     const { question, answer } = this.state
     let card = { question, answer }
     const { navigation } = this.props
@@ -97,7 +97,7 @@ class AddCardScreen extends Component {
           ref={(el) => {
             this.questionEl = el
           }}
-          style={[styles.textInput, {width: Math.floor(width * 0.8)}]}
+          style={styles.textInput}
           value={this.state.question}
           onChangeText={val => this.setState({question: val})}
           maxLength={100} />
@@ -109,12 +109,12 @@ class AddCardScreen extends Component {
           ref={(el) => {
             this.answerEl = el
           }}
-          style={[styles.textInput, {width: Math.floor(width * 0.8)}]}
+          style={styles.textInput}
           value={this.state.answer}
           onChangeText={val => this.setState({answer: val})}
           maxLength={100} />
         <TouchableOpacity onPress={this.submit}>
-          <View style={[styles.button, {backgroundColor: white}]}>
+          <View style={styles.button}>
             <Text style={styles.buttonText}>Submit</Text>
           </View>
         </TouchableOpacity>

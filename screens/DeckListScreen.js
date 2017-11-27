@@ -44,7 +44,7 @@ class DeckListScreen extends Component {
     
     return (
       <Content style={styles.content}>
-        <List
+        <List 
           style={styles.list}
           dataArray={list}
           renderRow={(l) =>

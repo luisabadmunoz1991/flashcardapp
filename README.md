@@ -1,18 +1,18 @@
-Luis Muñoz this my final test for complete the react native class
+This is my final test for complete the react native class
  IMPORTANT: This app it was only testing on IOS emulator
  
 
  # How to run the app flascardapp
 
-+ git clone  https://github.com/luisabadmunoz1991/flashcardapp
-+ cd flashcardapp
-+ yarn install or npm install
-+ yarn start  or npm start
+ 1- git clone flascardapp
+ 2- cd flascardapp
+ 3- yarn
+ 4- yarn start
 
  # Run the application
  
-+  cd flascardapp
-+ yarn start or npm start
+5-  cd flascardapp
+6- yarn start or npm start
  
  # Dependencies
 
@@ -21,4 +21,6 @@ Luis Muñoz this my final test for complete the react native class
 + react-native
 + react-native-flip-card
 + expo
+
+this the link for the documentation https://docs.expo.io/versions/latest/guides/linking.html
 

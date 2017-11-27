@@ -13,6 +13,7 @@ class Card extends Component {
     showAnswer: false
   }
 
+
   componentWillReceiveProps () {
     this.setState({showAnswer: false})
   }
@@ -25,7 +26,6 @@ class Card extends Component {
       <View style={styles.container}>
         <FlipCard flip={showAnswer}
           perspective={Platform.OS === 'ios' ? 0 : 800}
-          style={{borderWidth: 0}}
           friction={8}
           flipHorizontal={true}
           flipVertical={false}>
@@ -33,13 +33,13 @@ class Card extends Component {
             <Text style={styles.sintilla}>
               {data.question + '?'}
             </Text>
-            <Text style={{color: 'orange', marginBottom: 5}}>Show Answer</Text>
+            <Text style={styles.lore}>Show Answer</Text>
           </View>
           <View style={[styles.quizCard, styles.cardBack]}>
             <Text style={styles.sintilla}>
               {data.answer}
             </Text>
-            <Text style={{color: 'green', marginBottom: 5}}>Question</Text>
+            <Text style={styles.questi}>Question</Text>
           </View>
         </FlipCard>
       </View>

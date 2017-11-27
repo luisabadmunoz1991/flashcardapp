@@ -86,7 +86,7 @@ class QuizScreen extends Component {
       <View style={styles.detailWrapper}>
         {
           completed
-          ? <View style={{flex: 4, justifyContent: 'center', alignItems: 'center'}}>
+          ? <View style={styles.quiz2}>
               <Text style={styles.scoreText}>
                 Total: {_questions.length}
               </Text>
@@ -97,7 +97,7 @@ class QuizScreen extends Component {
                 YOUR SCORE : { (correct / _questions.length * 100).toFixed(1) }
               </Text>
             </View>
-          : <View style={{flex: 4, justifyContent: 'center', alignItems: 'center'}}>
+          : <View style={styles.quiz2}>
               <Text style={styles.progressText}>
                 {`${progress}/${_questions.length}`}
               </Text>
@@ -106,32 +106,32 @@ class QuizScreen extends Component {
         }
         {
           completed
-          ? <View style={{flex: 2, justifyContent: 'center'}}>
-              <TouchableOpacity style={{flex: 1}} onPress={this.restart}>
-                <View style={[styles.button, {backgroundColor: blue}]}>
+          ? <View style={styles.completed1}>
+              <TouchableOpacity style={styles.flex1} onPress={this.restart}>
+                <View style={styles.button3}>
                   <Text style={styles.buttonText2}>
                     Restart Quiz
                   </Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity style={{flex: 1}} onPress={this.completedBack}>
-                <View style={[styles.button, {backgroundColor: blue}]}>
+              <TouchableOpacity style={styles.flex1}  onPress={this.completedBack}>
+                <View style={styles.button3}>
                   <Text style={styles.buttonText2}>
                     Back To Deck
                   </Text>
                 </View>
               </TouchableOpacity>
             </View>
-          : <View style={{flex: 2}}>
-              <TouchableOpacity style={{flex: 1}} onPress={e => this.goNextQuestion(true)}>
-                <View style={[styles.button2, {backgroundColor: verde}]}>
+          : <View style={styles.flex2}>
+              <TouchableOpacity onPress={e => this.goNextQuestion(true)}>
+                <View style={styles.buttonverde}>
                   <Text style={styles.buttonText2}>
                     True
                   </Text>
                 </View>
               </TouchableOpacity>
-              <TouchableOpacity style={{flex: 1}} onPress={e => this.goNextQuestion(false)}>
-                <View style={[styles.button, {backgroundColor: rojo}]}>
+              <TouchableOpacity  style={styles.flex1} onPress={e => this.goNextQuestion(false)}>
+                <View style={styles.buttonrojo}>
                   <Text style={styles.buttonText2}>
                     False
                   </Text>
@@ -145,4 +145,3 @@ class QuizScreen extends Component {
 }
 
 export default QuizScreen
-
