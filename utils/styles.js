@@ -169,6 +169,9 @@ export default StyleSheet.create({
     paddingBottom: 10,
     borderRadius: 25,
     backgroundColor:blue
+  },
+  questi:{
+    color:orange
   }
 
   
